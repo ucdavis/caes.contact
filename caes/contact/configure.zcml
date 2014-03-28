@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="caes.contact">
+
+    <includeDependencies package="." />
+    <plone:behavior
+        title="Contact Info"
+        description="Contact information for any Dexterity Content type"
+        provides=".contact.IContact"
+        factory=".contact.Contact"
+        for="plone.dexterity.interfaces.IDexterityContent"
+        />
+
+</configure>

@@ -20,6 +20,12 @@ setup(name='caes.contact',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
+          'plone.behavior',
+          'plone.directives.form',
+          'zope.schema',
+          'zope.interface',
+          'zope.component',
+          'rwproperty',
       ],
       extras_require={
       },
