@@ -30,7 +30,7 @@ class Contact(object):
 
     @getproperty
     def contact(self):
-        return getattr(self.context, 'contact')
+        return getattr(self.context, 'contact', '')
 
     @setproperty
     def contact(self, value):
